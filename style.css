@@ -1,0 +1,51 @@
+/* Estilos   */
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header  */
+header {
+    background-color: #07f107;
+    color: rgb(5, 255, 84);
+    padding: 10px 0;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    font-size: 25px;    
+    color: rgb(1, 4, 0) !important;
+}
+
+/* títulos */
+h1, h2 {
+    color: #1adc09;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Footer*/
+footer {
+    background-color: #25df11;
+    color: rgb(33, 255, 25);
+}
+
+/* Botón  */
+form button {
+    background-color: #39bd0d;
+    color: rgb(25, 255, 25);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4ccf10;
+}
