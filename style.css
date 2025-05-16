@@ -49,3 +49,173 @@ form button {
 form button:hover {
     background-color: #4ccf10;
 }
+
+/* Estructura General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Flexbox para hero */
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Grid para secciones informativas */
+  .grid-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-sections {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Centrado del texto en info */
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Footer redes sociales en Flex */
+  footer .mb-2 {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+/* HERO mejorado */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom right, #e3fceb, #c6eecb);
+    padding: 3rem 1rem;
+    border-radius: 10px;
+  }
+  
+  /* INFO Grid como antes */
+  .grid-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-sections {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Productos Destacados - Grid */
+  .productos-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .productos-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .producto-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .producto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Sección Sobre Nosotros - Flex */
+  #about {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Sección de contacto */
+#contacto {
+    background-color: #f1fdf5;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Formulario con Grid */
+  .formulario-contacto {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .form-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+  }
+  

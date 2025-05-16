@@ -26,30 +26,33 @@
     </nav>
   </header>
 
-  <!-- ======= MAIN ======= -->
-  <main class="container my-5">
-    <section id="contact" class="col-md-8 offset-md-2">
-      <h1 class="mb-4 text-center">Contáctanos</h1>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Nombre:</label>
-          <input type="text" class="form-control" id="name" name="name" required>
-        </div>
 
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
+  <!-- ======= CONTACTO ======= -->
+<section id="contacto" class="contacto container my-5">
+  <h2 class="text-center mb-4">Contáctanos</h2>
+  <form class="formulario-contacto">
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+    </div>
 
-        <div class="mb-3">
-          <label for="message" class="form-label">Mensaje:</label>
-          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-        </div>
+    <div class="form-group">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
 
-        <button type="submit" class="btn btn-success">Enviar</button>
-      </form>
-    </section>
-  </main>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success px-4">Enviar Mensaje</button>
+    </div>
+  </form>
+</section>
+
 
   <!-- ======= FOOTER ======= -->
   <footer class="bg-light text-center py-3 border-top">
