@@ -1,0 +1,26 @@
+.galeria-productos {
+    @include grid-responsive(1);
+    justify-items: center;
+  
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: $radio-borde;
+      box-shadow: $sombra;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    @media (min-width: 576px) {
+      @include grid-responsive(2);
+    }
+  
+    @media (min-width: 992px) {
+      @include grid-responsive(3);
+    }
+  }
+  

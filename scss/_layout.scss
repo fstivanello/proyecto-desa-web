@@ -1,0 +1,20 @@
+.section {
+    padding: 2rem 1rem;
+    background-color: $gris-claro;
+    border-radius: $radio-borde;
+  }
+  
+  #productos {
+    @extend .section;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .servicios {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+  
